@@ -2,7 +2,7 @@
 #include <fstream>
 #include <string>
 
-int raj (std::string line) {
+int find_max (std::string line) {
 
     int maxIndex1 = 0;
     char maxDigit1 = '/';
@@ -52,7 +52,7 @@ int main() {
     int max;
     int sum = 0;
     while (std::getline(file, line)){
-       max = raj(line);
+       max = find_max(line);
        sum += max;
     }
     std::cout << sum;
